@@ -1,0 +1,20 @@
+1、处理输入文本，翻译的小例子
+TextInput是一个允许用户输入文本的基础组件。它有一个名为onChangeText的属性
+
+2、处理触摸事件
+Touchable这个组件的样式是固定的。所以如果它的外观并不怎么搭配你的设计，那就需要使用TouchableOpacity或是TouchableNativeFeedback组件来定制自己所需要的按钮，视频教程如何制作一个按钮讲述了完整的过程。或者你也可以在 github.com 网站上搜索 'react native button' 来看看社区其他人的作品。
+
+具体使用哪种组件，取决于你希望给用户什么样的视觉反馈：
+
+一般来说，你可以使用TouchableHighlight来制作按钮或者链接。注意此组件的背景会在用户手指按下时变暗。
+
+在 Android 上还可以使用TouchableNativeFeedback，它会在用户手指按下时形成类似墨水涟漪的视觉效果。
+
+TouchableOpacity会在用户手指按下时降低按钮的透明度，而不会改变背景的颜色。
+
+如果你想在处理点击事件的同时不显示任何视觉反馈，则需要使用TouchableWithoutFeedback。
+
+某些场景中你可能需要检测用户是否进行了长按操作。可以在上面列出的任意组件中使用onLongPress属性来实现
+
+3、滚动视图ScrollView
+ScrollView适合用来显示数量不多的滚动元素。放置在ScrollView中的所有组件都会被渲染，哪怕有些组件因为内容太长被挤出了屏幕外。如果你需要显示较长的滚动列表，那么应该使用功能差不多但性能更好的FlatList组件。

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<network-security-config>
+ 
+ <base-config cleartextTrafficPermitted="true" />
+ 
+</network-security-config>
+
+<!-- 解决Android9默认阻止 http 请求的问题 -->
